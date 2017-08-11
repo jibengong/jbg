@@ -77,10 +77,12 @@ theme: yilia
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/jibengong/jibengong.github.io.git
+  branch: master
 
 
-
+## 插件
 jsonContent:
     meta: false
     pages: false
