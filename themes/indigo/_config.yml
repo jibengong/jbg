@@ -44,12 +44,12 @@ favicon: /img/favicon.ico
 email: seed_da@qq.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
-color: '#3F51B5'
+color: '#000000'
 
 # 页面标题
-tags_title: Tags
-archives_title: Archives
-categories_title: Categories
+tags_title: 标签页
+archives_title: 所有归档
+categories_title: 文章分类
 
 # 文章截断
 excerpt_render: false
@@ -129,7 +129,7 @@ canonical: false
 since_year: 2015
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-about: 用户页面中作者相关的描述性文字，如不需要设为 false
+about: 深藏功与名
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
@@ -138,11 +138,11 @@ visit_counter:
 
 # 动态定义title
 title_change:
-  normal: (つェ⊂)咦!又好了!
-  leave: 死鬼去哪里了！
+  normal: 欢饮光临!
+  leave: 好久不见，别来无恙！
 
 # 设置为 true 发布后将使用 unpkg cdn
-cdn: true
+cdn: false
 
 # 设置为 true 将使用 lightbox render 图片
 lightbox: true
