@@ -17,19 +17,23 @@ menu:
   tags:
     text: 标签
     url: /tags
-  th-list:
-    text: 分类
-    url: /categories
-  github:
-    url: https://github.com/yscoder
-    target: _blank
+  #th-list:
+    #text: 分类
+    #url: /categories
+  #github:
+    #url: https://github.com/jibengong
+    #target: _blank
   weibo:
     text: 微博
     url: https://weibo.com/p/1005055609507305
     target: _blank
   link:
-    text: 测试
+    text: 友链
     url: /custom
+  leaf:
+    text: 简书
+    url: http://www.jianshu.com/u/tyAKvE
+    target: _blank
 
 # 你的头像url
 avatar: /img/avatar.jpg
@@ -108,16 +112,16 @@ less:
 # 是否开启 disqus
 disqus_shortname: false
 # 是否开启友言评论, 填写友言用户id
-uyan_uid: false
+uyan_uid: 2084118
 # 是否开启网易云跟帖， 填写app sdk中的app key
 wangyi_ygt: false
 # 是否使用 gitment，https://github.com/imsun/gitment
 gitment: false
-# gitment:
-#   owner:
-#   repo:
-#   client_id:
-#   client_secret:
+ #gitment:
+    #owner: jibengong
+    #repo: 'jibengong.github.io'
+    #client_id: 'b84c46b2d2f00181d32d'
+    #client_secret: '7b67c0b87227368fa4030253daabfdf3467865e8'
 
 # 规范网址
 # 让搜索引擎重定向你的不同域名、不同子域、同域不同目录的站点到你期望的路径
@@ -132,14 +136,14 @@ since_year: 2015
 about: 深藏功与名
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
-visit_counter:
-  site_uv: 站点总访客数：
-  site_pv: 站点总访问量：
+visit_counter: false
+  #site_uv: 站点总访客数：
+  #site_pv: 站点总访问量：
 
 # 动态定义title
-title_change:
-  normal: 欢饮光临!
-  leave: 好久不见，别来无恙！
+title_change: false
+  #normal: 欢饮光临!
+  #leave: 好久不见，别来无恙！
 
 # 设置为 true 发布后将使用 unpkg cdn
 cdn: false
