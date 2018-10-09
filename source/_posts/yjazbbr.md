@@ -4,12 +4,19 @@ date: 2017-09-14 20:42:39
 tags: [linux,教程]
 ---
 ```
-wget --no-check-certificate https://github.com/hackskylin/across/raw/master/bbr.sh
-chmod +x bbr.sh
-./bbr.sh
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 ```
+18.04开启自带bbr：
 
+`echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf`
+保存生效：
+`sysctl -p`
+查看是否已开启bbr：
+`sysctl net.ipv4.tcp_available_congestion_control`
+查看是否启动了bbr：
+`lsmod | grep bbr`
 安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。
 重启完成后，进入 VPS，验证一下是否成功安装最新内核并开启 TCP BBR，输入以下命令：
 ```
