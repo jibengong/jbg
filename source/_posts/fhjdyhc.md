@@ -25,4 +25,4 @@ tags: [随笔,回忆录]
 
 记得最后一次见到风华姐姐，是在领了毕业证书准备离校的时候了。风华姐姐向来打扮朴素，即使获奖之后生活状态变化了，这一点也没有变。但那一日，夏季的热风正吹的猛烈，我总觉得能闻到一点淡淡的花香。这时，风华姐姐面带微笑从我身边经过，在相互寒暄了几句将来的打算之后，她便离开了。过了一会，花香味消失了，我忽然意识到了什么。原来，我刚才闻到的香味并不是来自于什么花，而是一种带有花香的洗衣液被太阳晒干后的味道。我心中一笑，想不到那年不洗衣不卫生的奇怪姐姐，现在竟然带着芳香，随风飘散。风华姐姐真是名副其实的风华啊。
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=446557407&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=523289109&auto=1&height=66"></iframe>
