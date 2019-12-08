@@ -6,6 +6,7 @@ menu:
   微薄: https://weibo.com/p/1005055609507305
   简书: https://www.jianshu.com/u/tyAKvE
   关于我: /aboutme
+  网址: https://jbg365.github.io
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
@@ -76,11 +77,11 @@ gitalk:
   admin: # GitHub ID
 
 # fancybox(仅用于相册展示，若需要可配置albums)
-fancybox: true
+fancybox: false
 
 # 访问量统计(不蒜子)
 busuanzi:
-  enable: true
+  enable: false
 
 # 友盟cnzz统计(url填js代码src链接)
 cnzz:
@@ -96,7 +97,7 @@ baidu_analytics: ''
 mathjax: true
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
+since: 2013
 
 #是否显示页脚信息(建议保留，有助于本主题的推广)
 pageFooter: false
