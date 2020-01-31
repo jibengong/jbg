@@ -29,3 +29,13 @@ sudo update-alternatives –install /usr/bin/java java /usr/lib/jvm/jdk1.7.0_60/
 ```
 java -version
 ```
+
+DEB版本安装后续：
+
+###### 需要检查并生成环境变量
+
+```
+sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-13.0.1/bin/java 2
+sudo update-alternatives --config java
+```
+
