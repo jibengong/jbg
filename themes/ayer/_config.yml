@@ -101,3 +101,6 @@ since: 2013
 
 #是否显示页脚信息(建议保留，有助于本主题的推广)
 pageFooter: false
+
+aplayer:
+  meting: true

@@ -81,7 +81,8 @@ deploy:
   repo: https://github.com/jibengong/jibengong.github.io.git
   branch: master
 
-
+aplayer:
+  meting: true
 ## 插件
 ##jsonContent:
     ##meta: false
