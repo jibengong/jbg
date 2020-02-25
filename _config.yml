@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: ayer
+theme: ayer_20200213
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
