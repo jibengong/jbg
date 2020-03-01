@@ -9,7 +9,7 @@ $block
 
 $base-style
   h1, h2, h3, h4, h5, h6
-    margin 1.5rem 0
+    margin 2.5rem 0 1.5rem
   hr
     height border-width
     background-color border-color
@@ -34,8 +34,7 @@ $base-style
   acronym, abbr
     border-bottom border-width border-color dotted
   ul, ol, dl
-    margin 1.5rem 0
-    line-height line-height
+    margin 1.5rem 0 1.5rem 2rem
 
   p, table, blockquote
     margin 1.5rem 0
@@ -49,17 +48,21 @@ $base-style
     border none
   table
     width 100%
+    max-width 70rem
+    border 1px solid #dedede
+    margin 15px auto
     border-collapse collapse
-    vertical-align middle
     empty-cells show
-    text-align left
-    th, td, &
-      border border-width border-color solid
-    th, td
-      padding 1rem 1.5rem
-    tbody
-      tr:nth-child(2n)
-        background-color transparent
+    th,td
+        border 1px solid #dedede
+        padding 5px 10px
+    th
+        font-weight bold
+        text-align center !important
+        background rgba(158, 188, 226, .2)
+        white-space nowrap
+    td:nth-child(1)
+        white-space nowrap
 
   blockquote
     display block

@@ -1,6 +1,6 @@
 <p align="center"><a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
 
-<h3 align="center">一个干净且优雅的 Hexo 主题</h3>
+<h3 align="center">一个安静且优雅的 Hexo 主题</h3>
 
 <p align="center">
   <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
@@ -14,7 +14,7 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.1-blue.svg">
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.8-blue.svg">
   </a>
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
@@ -25,13 +25,15 @@
 
 ---
 
-:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  
+:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  shenyu@hotmail.com
 
 <b>注：收藏本主题请点右上角Star，谢谢~</b>
 
 ### [Preview 预览](https://shen-yu.gitee.io)
 
 ### [中文说明](https://shen-yu.gitee.io/2019/ayer/)
+
+### [国内镜像](https://gitee.com/shen-yu/hexo-theme-ayer)
 
 ![Screenshot](screenshots/hexo-theme-ayer.png)
 
@@ -58,26 +60,41 @@ git pull
 
 ### Configuration
 
-let me know if you can’t find something.
+let me know if you have any questions.
 
 ``` yml
 # Menu-Sidebar
 menu:
   Home: /
   Archives: /archives
+  Categories: /categories
+  Tags: /tags
   Gallery: http://shenyu-vip.lofter.com
   Travel: /tags/旅行/
   About: /2019/about
+
+# Subtitle and Typing animation
+# https://github.com/mattboldt/typed.js
+subtitle:
+  enable: true
+  text: A clean and elegant theme
+  text2: It's perfect for your hexo blog
+  text3: Have fun!  #Supports up to three lines of text
+  startDelay: 0
+  typeSpeed: 200
+  loop: true
+  backSpeed: 100
+  showCursor: true
 
 # Favicon and sidebar logo
 favicon: /favicon.ico
 logo: /images/ayer-side.svg
 
 # Cover Setting 
-# enable: [true|false]；path: [background-image path]；logo: [cover-logo path]
+# enable: [true|false]；path: [background-image]；logo: [cover-logo-image]
 cover:
   enable: true
-  path: /images/cover1.jpg  # images目录下附送多张美图，可更换
+  path: /images/cover1.jpg  # there are some beautiful cover images in Ayer's directory: /source/images, choose your favorite image to replace it.
   logo: /images/ayer.svg
 
 # ProgressBar  
@@ -86,6 +103,12 @@ progressBar: ture
 # Article Setting
 # (Use this to excerpt if article is too long：<!--more-->)
 excerpt_link: Read More...
+excerpt_all: false
+
+# Share
+share_enable: true
+# If you are not in China, maybe you prefer to set:false
+share_china: true
 # share text
 share_text: Share
 # search text
@@ -100,23 +123,37 @@ nav_text:
 # Catalog in article
 toc: true
 
+# images in the article support click to fullscreen
+image_viewer: true
+
+# https://github.com/willin/hexo-wordcount
+word_count:
+  enable: true
+  # only display in article page(not in index page)
+  only_article_visit: true
+
 # Reward Setting
 # type：0-close reward； 1-only open in article which you have configured reward:true； 2-open in all articles
 reward_type: 2
 # reward word
-reward_wording: '请我喝杯咖啡吧~'
+reward_wording: 'Buy me a cup of coffee~'
 # qrcode image path
 alipay: /images/alipay.jpg
 # qrcode image path
 weixin: /images/wechat.jpg
 
+# Copyright
+# type：0-close all； 1-only display in article which you have configured copyright: true； 2-all articles
+copyright_type: 2
+
 # Search
+# https://github.com/theme-next/hexo-generator-searchdb
 search: true
 
-# RSS(npm i hexo-generator-feed)
+# RSS
 rss: /atom.xml
 
-# Comment：1、Valine(recommended)；2、Gitalk
+# Comment：1、Valine (recommended)；2、Gitalk
 
 # 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
 # You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.
@@ -127,8 +164,9 @@ leancloud:
 # Valine Setting
 valine:
   enable: true 
+  verify: false # comment verify
   avatar: mp # (https://valine.js.org/avatar.html)
-  placeholder: 给我的文章加点评论吧~ # placeholder
+  placeholder: Add some comments to my article~ # placeholder
 
 # 2、Gitalk(https://github.com/gitalk/gitalk)
 gitalk:
@@ -167,18 +205,18 @@ mathjax: true
 # since year
 since: 2019
 
-# pageFooter (Set true and let more people know this theme, Thanks!)
+# pageFooter (Set true can let more people know this theme, Thanks!)
 pageFooter: true
 ```
 
 ### Plugins
 
-+ [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) Local search
++ [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) (for Local Search)
 	
   ```yml
   $ npm install hexo-generator-searchdb --save
   ```
-  Then add the plugin configuration for hexo's configuration file `_config.yml` (note: not the theme's configuration file):
+  Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
   
   ```yml
   # Hexo-generator-search
@@ -188,16 +226,16 @@ pageFooter: true
     format: html
   ```
 
-+ [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed) RSS
++ [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed) (for RSS)
 
   ```yml
   $ npm install hexo-generator-feed --save
   ```
   
-  Then add the plugin configuration for hexo's configuration file `_config.yml` (note: not the theme's configuration file):
+  Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
   
   ```yml
-  feed:
+  feed:m 
       type: atom
       path: atom.xml
       limit: 20
@@ -208,25 +246,27 @@ pageFooter: true
       order_by: -date	
   ```
   
-+ [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
++ [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) (for Sticky Post)
 	
 	``` bash
   $ npm uninstall hexo-generator-index --save
   $ npm install hexo-generator-index-pin-top --save
   ```
-
-### Post poster
-
+### Categories
+``` bash
+  hexo new page categories
+```
+Then paste following codes to file: /source/categories/index.md
 ``` md
 ---
-title: Post name
-
-photos: [
-        ["img_url"],
-        ["img_url"]
-        ]
+title: categories
+type: categories
+layout: "categories"
 ---
 ```
+
+### Tags
+Same as categories.
 
 ### Gallery
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.
@@ -262,6 +302,5 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
 
 ---
 
-Inspired by [Ocean](https://github.com/zhwangart/hexo-theme-ocean)
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Ayer</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Shen-Yu/hexo-theme-ayer" property="cc:attributionName" rel="cc:attributionURL">Eric-Shen</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<br/>
+<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under  <a rel="license" href="https://www.mit-license.org/">MIT</a>.
