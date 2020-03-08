@@ -31,7 +31,7 @@ logo: /favicon.ico
 
 cover:
   enable: true
-  path: /images/cover9.jpg  # images目录下附送多张美图，可更换
+  path: /images/cover15.jpg  # images目录下附送多张美图，可更换
   logo: false #/images/ayer.svg，如果不要直接设置成false
 
 # 页面顶部进度条  
