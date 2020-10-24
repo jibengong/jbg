@@ -72,13 +72,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: fluid
+theme: indigo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/jibengong/jibengong.github.io.git
+  repo: https://gitee.com/seed_da/seed_da.git
   branch: master
 
 aplayer:
